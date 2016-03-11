@@ -1,0 +1,62 @@
+<HTML><HEAD>
+<TITLE>錯誤：欲連結之網址（URL）無法正確的傳回</TITLE>
+</HEAD><BODY>
+<H1>錯誤</H1>
+<H2>欲連結之網址（URL）無法正確的傳回</H2>
+
+   <SCRIPT language="JavaScript">
+   function sendSubmit(){
+        var k = document.search.k.value;
+        var t = document.search.t.value;
+        if( k=="" ){
+                alert("請輸入關鍵字");
+                return false;
+        }
+        if( t =="music" ){
+                 var goURL ="http://www.hinet.net/c/c1.htm?nextpage=http://webezpeer.music.hinet.net/ftsearch.php?textfield2="+k+"&select4=ftsong&select=0&submit=submit&site_id=2102";
+        }else if( t =="hichannel" ){
+                var goURL = "http://hichannel.hinet.net/search/search.jsp?key=" + k;
+        }else if( t =="company" ){
+                var goURL = "http://hipage.hinet.net/list.asp?qrytype=keyword&keyword=" + k;
+        }else{
+                var goURL = "http://search.hinet.net/hisearch?k="+k+"&t="+t;
+        }
+        location.href=goURL;
+        return false
+}
+</SCRIPT>
+<table cellspacing="0" cellpadding="0" border="0" width="200">
+<form method="get" onsubmit="return sendSubmit();" name="search">
+<tr>
+<td width="270"><input size="35" type="text" name="k"><input value="wps" name="t" type="hidden"></td><td>
+<div align="center">
+<input type="image" border="0" height="21" width="38" src="http://www.hinet.net/images/bt_search.gif"></td></tr>
+</table>
+</form>
+<table><tr><td><IFRAME WIDTH=200 HEIGHT=20 MARGINWIDTH=0 MARGINHEIGHT=0 FRAMEBORDER=0 SCROLLING=no BORDERCOLOR=F3F5FF SRC=http://p4u.hinet.net/html.ng/site=hinet&affiliate=proxy&pagepos=1&type=txt&params.styles=textP></IFRAME><IFRAME WIDTH=200 HEIGHT=20 MARGINWIDTH=0 MARGINHEIGHT=0 FRAMEBORDER=0 SCROLLING=no BORDERCOLOR=F3F5FF SRC=http://p4u.hinet.net/html.ng/site=hinet&affiliate=proxy&pagepos=2&type=txt&params.styles=textP></IFRAME>
+</td></tr></table> 
+<HR>
+<P>
+當嘗試傳回下面的網址（URL）時：
+<A HREF="http://jirs.judicial.gov.tw/FJUD/FJUDQRY03_1.aspx">http://jirs.judicial.gov.tw/FJUD/FJUDQRY03_1.aspx</A>
+<P>
+發生了下列的錯誤：
+<UL>
+<LI>
+<STRONG>
+Read Error
+<LI>
+讀取錯誤
+</STRONG>
+</UL>
+
+<P>
+系統回應：
+<PRE><I>    (104) Connection reset by peer</I></PRE>
+
+<P>
+An error condition occurred while reading data from the network.  Please
+retry your request.
+</P><P>
+正在透過網路讀取資料時發生了錯誤的情況，請再嘗試一遍您的連結要求。
+</P>
